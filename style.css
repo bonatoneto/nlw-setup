@@ -37,14 +37,17 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 48px;
+    position: fixed;
+    background-color: #09090A;
+    width: 100%;
 }
 
 input {
     appearance: none;
     -webkit-appearance: none;
 
-    width: 64px;
-    height: 64px;
+    width: 32px;
+    height: 32px;
 
     border: 2px solid #27272A;
     border-radius: 8px;
@@ -58,28 +61,31 @@ input:checked {
 
 #form-habits {
     display: flex;
-    padding: 48px;
-    justify-content: center;
+    padding: 182px 100px 100px 100px;
+    width: fit-content;
 }
 
 .days {
     display: flex;
-    gap: 24px;
+    
 }
 
 .day {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
 }
 .day div {
     color: #A1A1AA;
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 12px;
+    margin: 6px;
     line-height: 125%;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     text-align: center;
     font-family: 'Roboto Mono', monospace;
 }
@@ -87,16 +93,27 @@ input:checked {
 .habits {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
     margin-top: 46px;
 }
 
 .habit {
     
-    width:64px;
-    height: 64px;
+    width:32px;
+    height: 32px;
     font-size: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 32px;
+}
+
+@media (max-width: 570px) {
+    button div {
+        display: none;
+    }
+
+    button {
+        
+    }
 }
