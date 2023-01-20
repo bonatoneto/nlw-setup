@@ -61,7 +61,7 @@ input:checked {
 
 #form-habits {
     display: flex;
-    padding: 182px 100px 100px 100px;
+    padding: 182px 20px 100px 20px;
     width: fit-content;
 }
 
@@ -101,19 +101,15 @@ input:checked {
     
     width:32px;
     height: 32px;
-    font-size: 32px;
+    font-size: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 32px;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 650px) {
     button div {
         display: none;
-    }
-
-    button {
-        
     }
 }
