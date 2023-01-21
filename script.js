@@ -22,6 +22,6 @@ function save() {
     localStorage.setItem('NLWhabits', JSON.stringify(nlwSetup.data))
 }
 
-const data = JSON.parse(localStorage.getItem('NLWhabits')) || {}
+const data = JSON.parse(localStorage.getItem('NLWhabits')) || {} 
 nlwSetup.setData(data)
 nlwSetup.load()
